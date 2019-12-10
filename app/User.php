@@ -32,7 +32,7 @@ class User extends Authenticatable
         return $this->hasMany(Micropost::class);
     }
 
-    //tataita
+ 
     
     public function followings()
     {
