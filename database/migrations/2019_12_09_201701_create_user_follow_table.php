@@ -11,7 +11,7 @@ class CreateUserFollowTable extends Migration
      *
      * @return void
      */
-     public function up()
+    public function up()
     {
         Schema::create('user_follow', function (Blueprint $table) {
             $table->increments('id');
