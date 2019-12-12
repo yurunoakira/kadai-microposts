@@ -8,6 +8,7 @@
                 </div>
                 <div>
                     <p class="mb-0">{!! nl2br(e($micropost->content)) !!}</p>
+                    @include('fav.fav_button', ['micropost' => $micropost])
                 </div>
                 <div>
                     @if (Auth::id() == $micropost->user_id)
